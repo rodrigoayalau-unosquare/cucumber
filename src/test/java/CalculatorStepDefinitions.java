@@ -20,8 +20,8 @@ public class CalculatorStepDefinitions {
         result = calculator.add(a, b);
     }
 
-    @Then("I shuld get {int}")
+    @Then("I should get {int}")
     public void i_should_get(Integer expected) {
         assertThat(result).isEqualTo(expected);
-    };
+    }
 }
